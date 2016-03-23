@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+        <meta name="description" content="Fancy Sliding Form with jQuery" />
+        <meta name="keywords" content="jquery, form, sliding, usability, css3, validation, javascript"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
+
+<title>Deportes</title>
+<link rel="stylesheet" type="text/css" href="futbol.css">
+</head>
+
+
+<script type="text/javascript">
+         function mostrar(){
+            document.getElementById('jorna1').style.display= 'block';
+         }      
+      </script>
+<body>
+
+
+
+
+
+
+
+
+<!--posiciones-->
+<form class="posiciones"> 
+<p style="font-size:40px;">Posiciones</p>
+	<table>
+		<tr>
+			<td>Equipo</td>
+			<td>pj</td>
+			<td>pg</td>
+			<td>pe</td>
+			<td>pp</td>
+			<td>gf</td>
+			<td>gc</td>
+			<td>dif</td>
+			<td>pts</td>
+		</tr>
+	</table>
+
+	<!--no funciona pero no se tiene que borrar-->
+        <form id="numero">
+           
+        </form>
+
+    <!--segundo lugar -->
+        <form id="numero2">
+            <select id="equipo2" name="Equipo2" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+    </select>                 
+            <input id="jj2" name="Jj2" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg2" name="Jg2" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je2" name="Je2" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp2" name="Jp2" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf2" name="Gf2" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc2" name="Gc2" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif2" name="Dif2" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts2" name="Pts2" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+    <!--tercer lugar lugar-->
+        <form id="numero3">
+            <select id="equipo3" name="Equipo3" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+
+    </select>                   
+            <input id="jj3" name="Jj3" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg3" name="Jg3" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je3" name="Je3" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp3" name="Jp3" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf3" name="Gf3" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc3" name="Gc3" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif3" name="Dif3" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts3" name="Pts3" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+    <!--cuarto lugar-->
+       <form id="numero4">
+            <select id="equipo4" name="Equipo4" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+    </select>                 
+            <input id="jj4" name="Jj4" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg4" name="Jg4" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je4" name="Je4" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp4" name="Jp4" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf4" name="Gf4" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc4" name="Gc4" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif4" name="Dif4" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts4" name="Pts4" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+    <!--quinto lugar-->
+        <form id="numero5">
+            <select id="equipo5" name="Equipo5" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+    </select>                
+            <input id="jj5" name="Jj5" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg5" name="Jg5" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je5" name="Je5" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp5" name="Jp5" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf5" name="Gf5" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc5" name="Gc5" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif5" name="Dif5" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts5" name="Pts5" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+    <!--sexto lugar-->
+        <form id="numero6">
+            <select id="equipo6" name="Equipo6" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+    </select>          
+            <input id="jj6" name="Jj6" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg6" name="Jg6" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je6" name="Je6" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp6" name="Jp6" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf6" name="Gf6" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc6" name="Gc6" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif6" name="Dif6" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts6" name="Pts6" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+        <form id="numero1">
+             <select id="equipo1" name="Equipo1" type="text" placeholder="" style="top:10px; left:3px; width: 315px;
+    height: 20px; position:absolute;">
+        <option >Elija equipo</option>
+        <option value="jornada1">Blanco</option>
+        <option value="jornada2">Negro</option>
+        <option value="jornada3">Azul</option>
+        <option value="jornada4">Amarrillo</option>
+        <option value="jornada5">Rojo</option>
+        <option value="jornada6">Verde</option>
+    </select>                 
+            <input id="jj1" name="Jj1" type="text" placeholder=""/ style="top:10px; left:320px; width:87px;
+    height: 20px; position:absolute;"> <br />
+            <input id="jg1" name="Jg1" type="text" placeholder="" style="top:10px; left:410px; width: 107px;
+    height: 20px; position:absolute;"/>
+            <input id="je1" name="Je1" type="text" placeholder="" style="top:10px; left:520px; width: 107px;
+    height: 20px; position:absolute;"/> <br />           
+            <input id="jp1" name="Jp1" type="text" placeholder="" style="top:10px; left:630px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="gf1" name="Gf1" type="text" placeholder="" style="top:10px; left:740px; width: 92px;
+    height: 20px; position:absolute;"/>
+            <input id="gc1" name="Gc1" type="text" placeholder="" style="top:10px; left:835px; width: 107px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="dif1" name="Dif1" type="text" placeholder="" style="top:10px; left:945px; width: 122px;
+    height: 20px; position:absolute;"/> <br />
+            <input id="pts1" name="Pts1" type="text" placeholder="" style="top:10px; left:1070px; width: 128px;
+    height: 20px; position:absolute;"/>
+        </form>
+	</form>
+
+
+
+
+    <!--calendario-->
+    <input  type="button" value="Jornada 1-2"  onclick="mostrar()"></input>
+<div class="calendario">
+    <p style="font-size:40px;">Calendario</p>
+    <label>Elegir Jornada</label>
+
+    <form id="jor1" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor2" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+
+    <form id="jor3" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor4" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor5" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor6" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor7" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor8" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor9" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="jor10" class="mostrar">
+    <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+        </form>
+    <form id="sem1" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="sem2" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+    <form id="final" class="mostrar">
+        <p>jornada1</p>
+        <label style="position: relative; left: 30px; top: 10px;">Equipo</label>
+    </form>
+</div>
+    
+      
+    
+   </body>
+</html>

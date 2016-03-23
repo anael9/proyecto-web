@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Deportes</title>
+<link rel="stylesheet" type="text/css" href="fcalendario.css">
+</head>
+
+<body>
+
+<script type="text/javascript">
+   	function mostrar() {
+   		document.getElementById('se').style.display = 'block';
+        document.getElementById('ba1').style.display = 'block';
+        document.getElementById('bs2').style.display = 'block';
+   		document.getElementById('pi').style.display = 'none';
+   		document.getElementById('bs1').style.display = 'none';
+   	}
+   	function mostrara() {
+   		document.getElementById('se').style.display = 'none';
+        document.getElementById('ba1').style.display = 'none';
+        document.getElementById('bs2').style.display = 'none';
+   		document.getElementById('pi').style.display = 'block';
+   		document.getElementById('bs1').style.display = 'block';        
+   	}
+   	function mostrar2() {
+   		document.getElementById('te').style.display = 'block';
+   		document.getElementById('bs3').style.display = 'block';
+        document.getElementById('ba2').style.display = 'block';
+        document.getElementById('bs2').style.display = 'none';
+        document.getElementById('se').style.display = 'none';
+   	}
+   	function mostrara2() {
+   		document.getElementById('te').style.display = 'none';
+   		document.getElementById('bs3').style.display = 'none';
+        document.getElementById('ba2').style.display = 'none';
+        document.getElementById('bs2').style.display = 'block';
+        document.getElementById('se').style.display = 'block';
+   	}
+   	function mostrar3() {
+   		document.getElementById('cu').style.display = 'block';
+   		document.getElementById('ba3').style.display = 'block';
+        document.getElementById('bs4').style.display = 'block';
+        document.getElementById('ba2').style.display = 'none';
+        document.getElementById('te').style.display = 'none';
+   	}
+   	function mostrara3() {
+   		document.getElementById('cu').style.display = 'none';
+   		document.getElementById('ba3').style.display = 'none';
+        document.getElementById('bs4').style.display = 'none';
+        document.getElementById('ba2').style.display = 'block';
+        document.getElementById('te').style.display = 'block';
+   	}
+   	function mostrar4() {
+   		document.getElementById('qu').style.display = 'block';
+   		document.getElementById('ba4').style.display = 'block';
+        document.getElementById('bs5').style.display = 'block';
+        document.getElementById('ba3').style.display = 'none';
+        document.getElementById('cu').style.display = 'none';
+   	}
+   	function mostrara4() {
+   		document.getElementById('qu').style.display = 'none';
+   		document.getElementById('ba4').style.display = 'none';
+        document.getElementById('bs5').style.display = 'none';
+        document.getElementById('ba3').style.display = 'block';
+        document.getElementById('cu').style.display = 'block';
+   	}
+   	function mostrar5() {
+   		document.getElementById('sex').style.display = 'block';
+   		document.getElementById('ba5').style.display = 'block';
+        document.getElementById('bs6').style.display = 'block';
+        document.getElementById('ba4').style.display = 'none';
+        document.getElementById('qu').style.display = 'none';
+   	}
+   	function mostrara5() {
+   		document.getElementById('sex').style.display = 'none';
+   		document.getElementById('ba5').style.display = 'none';
+        document.getElementById('bs6').style.display = 'none';
+        document.getElementById('ba4').style.display = 'block';
+        document.getElementById('qu').style.display = 'block';
+   	}
+   	function mostrar6() {
+   		document.getElementById('sep').style.display = 'block';
+   		document.getElementById('ba6').style.display = 'block';
+        document.getElementById('bs7').style.display = 'block';
+        document.getElementById('ba5').style.display = 'none';
+        document.getElementById('sex').style.display = 'none';
+   	}
+   	function mostrara6() {
+   		document.getElementById('sep').style.display = 'none';
+   		document.getElementById('ba6').style.display = 'none';
+        document.getElementById('bs7').style.display = 'none';
+        document.getElementById('ba5').style.display = 'block';
+        document.getElementById('sex').style.display = 'block';
+   	}
+   	function mostrar7() {
+   		document.getElementById('oc').style.display = 'block';
+   		document.getElementById('ba7').style.display = 'block';
+        document.getElementById('bs8').style.display = 'block';
+        document.getElementById('ba6').style.display = 'none';
+        document.getElementById('sep').style.display = 'none';
+   	}
+   	function mostrara7() {
+   		document.getElementById('oc').style.display = 'none';
+   		document.getElementById('ba7').style.display = 'none';
+        document.getElementById('bs8').style.display = 'none';
+        document.getElementById('ba6').style.display = 'block';
+        document.getElementById('sep').style.display = 'block';
+   	}
+   	function mostrar8() {
+   		document.getElementById('no').style.display = 'block';
+   		document.getElementById('ba8').style.display = 'block';
+        document.getElementById('bs9').style.display = 'block';
+        document.getElementById('ba7').style.display = 'none';
+        document.getElementById('oc').style.display = 'none';
+   	}
+   	function mostrara8() {
+   		document.getElementById('no').style.display = 'none';
+   		document.getElementById('ba8').style.display = 'none';
+        document.getElementById('bs9').style.display = 'none';
+        document.getElementById('ba7').style.display = 'block';
+        document.getElementById('oc').style.display = 'block';
+   	}
+   	function mostrar9() {
+   		document.getElementById('dec').style.display = 'block';
+   		document.getElementById('ba9').style.display = 'block';
+        document.getElementById('bs10').style.display = 'block';
+        document.getElementById('ba8').style.display = 'none';
+        document.getElementById('no').style.display = 'none';
+   	}
+   	function mostrara9() {
+   		document.getElementById('dec').style.display = 'none';
+   		document.getElementById('ba9').style.display = 'none';
+        document.getElementById('bs10').style.display = 'none';
+        document.getElementById('ba8').style.display = 'block';
+        document.getElementById('no').style.display = 'block';
+   	}
+   	function mostrar10() {
+   		document.getElementById('onc').style.display = 'block';
+   		document.getElementById('ba10').style.display = 'block';
+        document.getElementById('bs11').style.display = 'block';
+        document.getElementById('ba9').style.display = 'none';
+        document.getElementById('dec').style.display = 'none';
+   	}
+   	function mostrara10() {
+   		document.getElementById('onc').style.display = 'none';
+   		document.getElementById('ba10').style.display = 'none';
+        document.getElementById('bs11').style.display = 'none';
+        document.getElementById('ba9').style.display = 'block';
+        document.getElementById('dec').style.display = 'block';
+   	}
+   	function mostrar11() {
+   		document.getElementById('doce').style.display = 'block';
+   		document.getElementById('ba11').style.display = 'block';
+        document.getElementById('bs12').style.display = 'block';
+        document.getElementById('ba10').style.display = 'none';
+        document.getElementById('onc').style.display = 'none';
+   	}
+   	function mostrara11() {
+   		document.getElementById('doce').style.display = 'none';
+   		document.getElementById('ba11').style.display = 'none';
+        document.getElementById('bs12').style.display = 'none';
+        document.getElementById('ba10').style.display = 'block';
+        document.getElementById('onc').style.display = 'block';
+   	}
+   	function mostrar12() {
+   		document.getElementById('fin').style.display = 'block';
+   		document.getElementById('ba12').style.display = 'block';
+   		document.getElementById('ba13').style.display = 'block';
+        document.getElementById('ba11').style.display = 'none';
+        document.getElementById('doce').style.display = 'none';
+   	}
+   	function mostrara12() {
+   		document.getElementById('fin').style.display = 'none';
+   		document.getElementById('ba12').style.display = 'none';
+   		document.getElementById('ba13').style.display = 'none';
+        document.getElementById('ba11').style.display = 'block';
+        document.getElementById('doce').style.display = 'block';
+   	}
+
+   </script>
+
+<video class="vjs-tech" id="vjs_video_756_html5_api" autoplay="" loop="loop" muted="muted" src="C:\Users\UNAV\Desktop\deportes\DEPORTE.mp4"></video>
+ <div class="contenedor">
+  <div class="posiciones"><B><p>Calendario torneo UNAV Enero-Mayo 2016</p></B></div>
+   <button id="bs1" type="button" onclick="mostrar()">siguiente</button> <!--va al segundo-->
+   <button id="ba1" type="button" onclick="mostrara()">anterior</button> <!--va al primero-->
+   <button id="bs2" type="button" onclick="mostrar2()">siguiente</button> <!--va al tercero-->
+   <button id="ba2" type="button" onclick="mostrara2()">anterior</button> <!--va al segundo-->
+   <button id="bs3" type="button" onclick="mostrar3()">siguiente</button> <!--va al cuarto-->
+   <button id="ba3" type="button" onclick="mostrara3()">anterior</button> <!--va al tercero-->
+   <button id="bs4" type="button" onclick="mostrar4()">siguiente</button> <!--va al quinto-->
+   <button id="ba4" type="button" onclick="mostrara4()">anterior</button> <!--va al cuarto-->
+   <button id="bs5" type="button" onclick="mostrar5()">siguiente</button> <!--va al sexto-->
+   <button id="ba5" type="button" onclick="mostrara5()">anterior</button> <!--va al quinto-->
+   <button id="bs6" type="button" onclick="mostrar6()">siguiente</button> <!--va al septimo-->
+   <button id="ba6" type="button" onclick="mostrara6()">anterior</button> <!--va al sexto-->
+   <button id="bs7" type="button" onclick="mostrar7()">siguiente</button> <!--va al octavo-->
+   <button id="ba7" type="button" onclick="mostrara7()">anterior</button> <!--va al septimo-->
+   <button id="bs8" type="button" onclick="mostrar8()">siguiente</button> <!--va al noveno-->
+   <button id="ba8" type="button" onclick="mostrara8()">anterior</button> <!--va al octavo-->
+   <button id="bs9" type="button" onclick="mostrar9()">siguiente</button> <!--va al decimo-->
+   <button id="ba9" type="button" onclick="mostrara9()">anterior</button> <!--va al noveno-->
+   <button id="bs10" type="button" onclick="mostrar10()">siguiente</button> <!--va al once-->
+   <button id="ba10" type="button" onclick="mostrara10()">anterior</button> <!--va al decimo-->
+   <button id="bs11" type="button" onclick="mostrar11()">siguiente</button> <!--va al doce-->
+   <button id="ba11" type="button" onclick="mostrara11()">anterior</button> <!--va al once-->
+   <button id="bs12" type="button" onclick="mostrar12()">siguiente</button> <!--va al final-->
+   <button id="ba12" type="button" onclick="mostrara12()">anterior</button> <!--va al doce-->
+   <div id="ba13"></div> <!--no hace nada-->
+
+   <!--jornada1-->
+   <div id="pi" class="primediv">
+   <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 1</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+    </div>
+<!--jornada2-->
+<div id="se" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 2</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--
+      jornada3-->
+<div id="te" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 3</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+   <!--jornada4-->
+   <div id="cu" class="primerdiv">
+   <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 4</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+    </div>
+<!--jornada5-->
+<div id="qu" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 5</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+      <!--jornada6-->
+<div id="sex" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 6</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--jornada7-->
+<div id="sep" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 7</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--jornada8-->
+<div id="oc" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 8</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--jornada9-->
+     <div id="no" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 9</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--jornada10-->
+<div id="dec" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Jornada 10</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>AMARILLO</td>
+   <td class=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg/50px-%C3%8Dcono_de_Barcelona_Sporting_Club_(aurinegro).svg.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>0</td>
+   <td class=""><img src="http://www.colombia.com/futbol/equipos/deportivo-cali/images/escudoP.jpg" class="imageLoaded" olspan="3"></td>
+   <td>VERDES</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--semis1-->
+     <div id="onc" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Semefinal 1</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--semis2-->
+<div id="doce" class="primerdiv">
+    <table class="jor2">
+   <thead><tr><th colspan="6"><span>Semefinal 2</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   <tr class="odd has-results" data-is-neutral-site="false">
+   <td>BLANCO</td>
+   <td class=""><img src="http://viator.es/wp-content/uploads/2015/03/icono-viator-blanco-50x50.png" class="imageLoaded" olspan="3"></td>
+   <td>0</td>
+   <td>3</td>
+   <td class=""><img src="http://www.sanroque.es/sites/default/files//styles/cuadrado_pequeno/public/Icono_Multimedia_2014_Redondo_64_4.png?itok=EgbVyxDN" class="imageLoaded" olspan="3"></td>
+   <td>NEGRO</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+     <!--final-->
+<div id="fin" class="primerdiv">
+    <table class="jor2" style="background-color: #45484a;">
+   <thead><tr><th colspan="6"><span>Final</span></th></tr></thead>
+   <tbody>
+   <tr>
+   <td>AZUL</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/4139.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>2</td>
+   <td>0</td>
+   <td class=""><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/5498.png&amp;h=50" class="imageLoaded" olspan="3"></td>
+   <td>ROJO</td>
+   </tr>
+   </tbody>
+   </table>
+     </div>
+<div class="glosario">
+        <h4>"La derrota es realmente una derrota cuando no la utilizamos para aprender y mejorar; si la utlizamos para uno de estos dos fines es una victoria más"</h4>
+      
+        </div>
+     </div>
+      
+
+     <div class="header">
+			<ul class="nav">
+			    <li><a href="http://unav.edu.mx/en/"><img src="C:\Users\UNAV\Desktop\deportes\imagenes\depor.png"></a></li>
+				<li><a href="">FUTBOL</a></li>
+				<li><a href="">BASQUET</a></li>
+				<li><a href="">VOLEY</a></li>
+			</ul>
+		</div>
+   </body>
+</html>

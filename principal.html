@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<title>Deportes</title>
+
+</head>
+
+<body>
+        
+<img src="https://blogtogo.de/wp-content/uploads/orroth_smooth.jpg" id="fondo">
+ <div class="contenedor">
+
+ 
+		<!--
+         <img src="C:\Users\UNAV\Desktop\deportes\imagenes\conta-Recuperado.png" style="height: 100px; width: 100px;">
+         <img src="C:\Users\UNAV\Desktop\deportes\imagenes\conta-Recuperado2.png" style="height: 100px; width: 100px;">
+         <img src="C:\Users\UNAV\Desktop\deportes\imagenes\conta-Recuperado3.png" style="height: 100px; width: 100px;">
+         <img src="C:\Users\UNAV\Desktop\deportes\imagenes\conta-Recuperado4.png" style="height: 100px; width: 100px;">-->
+         <img src="imagenes\cortedeporte5.png" style="height: 500px; width:500px; box-shadow: 5px 5px 10px rgb(200,200,200)  ;">
+
+        
+        <div id="link">
+        <div id="futbol">
+           <img src="">
+           <p></p>
+        </div>
+           <div id="basquet">
+           <img src="">
+           <p></p>
+        </div>
+        <div id="volei">
+           <img src="">
+           <p></p>
+        </div>
+        </div>
+        <div id="person">
+           <img src="http://tecache.cl/wp-content/uploads/2014/08/leo-caprile.jpg" style="height: 200px; width: 200px; border: 10px;">
+           <img src="http://static.cnnexpansion.com/media/2010/12/30/next2.jpg" style="height: 200px; width: 200px; border: 10px;">
+           <img src="http://imagenes.publico-estaticos.es/resources/archivos/2010/10/20/1287559723060jauregui2.jpg" style="height: 200px; width: 200px; border: 10px;">
+        </div>
+
+        <footer>
+            <video class="vjs-tech" id="vjs_video_756_html5_api" autoplay="" loop="loop" muted="muted" src="DEPORTE.mp4" style="position: relative;"></video>
+            
+              <input type="date" name="fecha">
+
+        </footer>
+
+        <div class="header">
+         <ul class="nav">
+             <li><a href="http://unav.edu.mx/en/"><img src="imagenes\depor.png"></a></li>
+            <li id="fut" type="button" ondblclick="mostrar()"><a href="">FUTBOL</a></li>
+            <li id="bas"><a href="">BASQUET</a></li>
+            <li id="voley"><a href="">VOLEY</a></li>
+         </ul>
+      </div>
+        </div>
+ <script type="text/javascript">
+ 	function mostrar() {
+   		document.getElementById('po').style.display = 'block';
+   	}
+
+ </script>
+ <style type="text/css">
+ body{
+   
+
+ }
+ #fondo{
+   position: fixed;
+ }
+ .header {
+            margin:15px auto;
+    text-align:center;
+    width:1340px;
+    height:50px;
+    top:-2.5%; 
+    left:19px; 
+    background-color: black;
+    z-index: 10px;
+    position: fixed;
+
+
+         }
+         
+         .nav ul{
+            list-style: none;
+                overflow: hidden;
+         }
+         
+         .nav > li {
+            float:left;
+            list-style:none;
+            
+         }
+         
+         .nav li a {
+            background-color:#000;
+            color:#fff;
+            text-decoration:none;
+            padding:10px 12px;
+            display:block;
+            height:30px;
+            text-align: center;
+         }
+         
+         .nav li a:hover {
+            text-align: center;
+         }
+         
+         .nav li ul {
+            display:none;
+            position:absolute;
+            min-width:140px;
+            text-align: center;
+         }
+         
+         .nav li:hover > ul {
+            display:block;
+         }
+         .nav li  a img{
+            height: 50px;
+            top: 0%;
+            left: 0px;
+
+         }
+ .contenedor{
+   margin:15px auto;
+    text-align:center;
+    width:1320px;
+    position:absolute;
+   right:30px;
+    height:100%;
+    top:40%; 
+    left:23.5%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+ }
+ #link{
+   margin:15px auto;
+    text-align:center;
+    width:1320px;
+    position:relative;
+   right:30px;
+    height:100%;
+    top:30%; 
+    left:22.5%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+ }
+ #futbol{
+   margin:15px auto;
+    text-align:center;
+    width:440px;
+    position:relative;
+   right:30px;
+    height:100%;
+    top:0%; 
+    left:22%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+    box-shadow: 5px 5px 10px rgb(200,200,200)
+ }
+ #basquet{
+   margin:15px auto;
+    text-align:center;
+    width:440px;
+    position:relative;
+   right:30px;
+    height:100%;
+    top:-71.8%; 
+    left:56%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+    box-shadow: 5px 5px 10px rgb(200,200,200)
+ }
+ #volei{
+   margin:15px auto;
+    text-align:center;
+    width:440px;
+    position:relative;
+   right:30px;
+    height:100%;
+    top:-143.7%; 
+    left:90%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+    box-shadow: 5px 5px 10px rgb(200,200,200)
+ }
+ #person{
+   margin:15px auto;
+    text-align:center;
+    width:1330px;
+    position:relative;
+   right:30px;
+    height:200px;
+    top:60%; 
+    left:22.5%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: black;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+ }
+ footer{
+   margin:15px auto;
+    text-align:center;
+    width:1330px;
+    position:relative;
+   right:30px;
+    height:300px;
+    top:90%; 
+    left:22.5%; 
+    margin-top:-200px; 
+    margin-left:-300px;
+    background-color: transparent;
+    opacity: 0.6px;
+    filter: alpha(opacity=50);
+ }
+ footer > video{
+top: 0%;
+left: -0%;
+height: 100%;
+ }
+ </style>
+ 
+   </body>
+</html>
