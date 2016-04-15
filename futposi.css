@@ -1,0 +1,95 @@
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c0c0c0;
+  color: #000;
+  font: 100%/1.5em "Varela Round", sans-serif;
+  margin: 0;
+}
+
+input {
+  background-image: none;
+  border: none;
+  font: 100%/1.5em "Varela Round", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contenedor {
+  left: 50%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          height: 
+}
+
+/* ---------- LOGIN ---------- */
+#posicion {
+  width: 600px;
+  position: absolute;
+  top: 1000%;
+  left: 30%;
+}
+
+#posicion h2 {
+  background: #5353FB;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  margin-bottom: 0px;
+}
+
+#posicion h2 span {
+  margin-right: 14px;
+}
+
+#posicion fieldset {
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 26px;
+  margin-bottom: 10px;
+}
+
+#posicion fieldset p {
+  color: #777;
+  margin-bottom: 14px;
+}
+
+#posicion fieldset p:last-child {
+  margin-bottom: 0;
+}
+
+#posicion fieldset input {
+  border-radius: 3px;
+  background: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 100%;
+}
+
+#posicion fieldset input[type="submit"] {
+  background: #33cc77;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  width: 100px;
+}
+
+#posicion fieldset input[type="submit"]:hover {
+  background: #28ad63;
+}
