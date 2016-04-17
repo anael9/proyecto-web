@@ -1,4 +1,5 @@
 <?php
+include('conectar.php');
 class login
 {
 	public $nombre;
@@ -7,23 +8,25 @@ class login
 
 	function __construct($nombre, $contra)
 	{
-		$this -> nombre = $nombre;
-		$this  -> contraseña = $contra;
+		$this->nombre = $nombre;
+		$this->contra = $contra;
 
 	}
-	public function conectar(){
-       include('conectar.php');
-	}
+	
+       
 
 	public function consulta(){
-$nombre=$_POST["usuario"];
-$contra=$_POST["contra"];
-$consulta = "SELECT * FROM login where usuario='nombre' and contrasena='contraseña'";
+
+		$conexionSacadatos = new Conexion();
+ $mysqli = $conexionSacadatos->conectar();
+
+$consulta = "SELECT * FROM login where usuario='$this->nombre' and contrasena='$this->contra'";
 $resultado = $mysqli->query($consulta);
 $fila = $resultado->fetch_row();
-	}
 
-	public function iniciarsecion(){
+	
+
+
 if ($fila[2]){
 	$valido=1;
 	$nombre=$fila[2];
@@ -35,16 +38,7 @@ if ($fila[2]){
 $valido=0;
 header("Location: login.php?valido=$valido");
 }
-	}
+}	
 }
-
-
-$login=new login($nombre, $contra);
-$login ->conectar();
-$login ->consulta();
-$login ->iniciarsecion();
-
-
-
 
 ?>

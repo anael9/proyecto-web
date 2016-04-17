@@ -28,7 +28,7 @@
  
       <div id="login" class="posicion">
 
-        <h2><span class="fontawesome-lock"></span>Pocisiones</h2>
+        <h2><span class="fontawesome-lock"></span>Jugadores</h2>
       <table class="heavyTable" id="mitabla">
       <thead>
         <tr>
@@ -49,7 +49,7 @@ $resultado = $mysqli->query($consulta);
 echo "<tr>";
 echo "<td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td>".$fila[3]."</td>
 <td><center>
-<a href=futjugador.php?id_us=".$fila[0]."><img src=http://ventadeactivos.com/img/ico2.png width=35 height=35 /></a><a href=actualizajugador.php?borrar=".$fila[0]."><img src=imagenes/borrar.jpg width=35 height=35 />
+<a href=futjugador.php?id_us=".$fila[0]."><img src=http://ventadeactivos.com/img/ico2.png width=35 height=35 /></a><a href=actualizajugador.php?borrar=".$fila[0]."><img src=http://www.unipamplona.edu.co/unipamplona/hermesoft/portalIG/PaginasAmarillas/publico/ayuda/paginas_amarillas/images/eliminar.gif width=35 height=35 />
 </center></td>";
 echo "</tr>";  
 }

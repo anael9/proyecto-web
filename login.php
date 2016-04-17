@@ -23,7 +23,7 @@ if (isset($_GET["nosession"])) echo "tu usuario y contraseña son incorrectos";
 
         <h2><span class="fontawesome-lock"></span>Entrar</h2>
 
-         <form action="validar.php" method="post">
+         <form action="valida.php" method="post">
 
            <fieldset>
 

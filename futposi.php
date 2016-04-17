@@ -10,10 +10,12 @@
   <body>
 <?php
 include('conectar.php');
+
 if (isset($_GET['id_us'])){
   $id=$_GET['id_us'];
 
-
+$consul = "SELECT * FROM posicionfut";
+$result = $mysqli->query($consul);
 $consulta = "SELECT * FROM posicionfut where posicion_id=$id";
 $resultado = $mysqli->query($consulta);
 $fila = $resultado->fetch_row();
@@ -45,18 +47,32 @@ $Puntos="";
 
 }
 
+
 ?>
     <div class="contenedor">
 
       <div id="posicion">
 
         <h2><span class="fontawesome-lock"></span>Actualizar</h2>
-
+         
         <form action="actualiza.php" method="POST">
 
           <fieldset>
-
             <p><label for="text">Equipo</label></p>
+            
+            <select name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>">
+             <?php    
+             while ( $row = mysqli_fetch_assoc($result))
+              {
+              ?>
+    
+              <option value=" <?php echo $row['equipo'] ?> " ><?php echo $row['equipo']; ?>
+               </option>
+        
+        <?php
+    }    
+    ?>     
+            </select>
             <p><input type="text" id="text" name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>"></p>
 
             <p><label for="text">Jugados</label></p>

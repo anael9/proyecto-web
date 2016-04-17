@@ -37,20 +37,11 @@ input {
 
 /* ---------- LOGIN ---------- */
 .posicion{
-  top: 340px;
+  top: -20px;
     margin: 10px auto;
       position: relative;
 }
-.calen{
-  top: 340px;
-    margin: 10px auto;
-    position: relative;
-}
-.goleadores{
-  top: 340px;
-    margin: 10px auto;
-    position: relative;
-}
+
 #login {
   width: 1200px;
  
