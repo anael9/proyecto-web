@@ -1,51 +1,79 @@
 <?php
 // CREANDO MI CONEXION
-include('conectar.php');
+include_once('conectar.php');
+class actualizaposicion
+{
+public $id;
+public $Equipo;
+public $Jugados;
+public $Ganados;
+public $Empatados;
+public $Perdidos;
+public $gfavor;
+public $gcontra;
+public $Diferencia;
+public $Puntos;
+
+function __construct($Equipo, $Jugados, $Ganados, $Empatados, $Perdidos, $gfavor, $gcontra, $Diferencia, $Puntos)
+	{
+	$this->id=$id;	
+	$this->Equipo=$Equipo;
+	$this->Jugados=$Jugados;
+	$this->Ganados=$Ganados;
+	$this->Empatados=$Empatados;
+	$this->Perdidos=$Perdidos;
+	$this->Favor=$gfavor;
+	$this->gcontra=$gcontra;
+	$this->Diferencia=$Diferencia;
+	$this->Puntos=$Puntos;
+	}
+public function actualiza()
+	{
+
+		$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
 
 
-$Equipo=$_POST["Equipo"];
-$Jugados=$_POST["Jugados"];
-$Ganados=$_POST["Ganados"];
-$Empatados=$_POST["Empatados"];
-$Perdidos=$_POST["Perdidos"];
-$gfavor=$_POST["Favor"];
-$gcontra=$_POST["contra"];
-$Diferencia=$_POST["Diferencia"];
-$Puntos=$_POST["Puntos"];
-
-
-if(isset($_POST["id"])){
-	$id=$_POST["id"];
-		$consulta = "UPDATE posicionfut SET equipo='$Equipo', partidosjugados='$Jugados', partidosganado='$Ganados', partidosempato='$Empatados', partidosperdido='$Perdidos', golesfavor='$gfavor', golescontra='$gcontra', diferencia='$Diferencia', puntos='$Puntos' where posicion_id=$id ";
-			if ($mysqli->query($consulta)){
+		$consulta = "UPDATE from posicionfut SET equipo='$this->Equipo', partidosjugados='$this->Jugados', partidosganado='$this->Ganados', partidosempato='$this->Empatados', partidosperdido='$this->Perdidos', golesfavor='$this->Favor', golescontra='$this->gcontra', diferencia='$this->Diferencia', puntos='$this->Puntos' where posicion_id=$this->id ";
+			if ($cone->query($consulta)){
 				header("Location: catalogofutbol.php");
 											}
 			else{
 				header("Location: login.php");
 				}
-					}
-elseif (isset($_POST["ids"])){
-	//$id=$_POST["id"];
-		$consulta = "INSERT into posicionfut values('', '$Equipo', '$Jugados', '$Ganados', '$Empatados', '$Perdidos', '$gfavor', '$gcontra', '$Diferencia', '$Puntos') ";
-			if ($mysqli->query($consulta)){
+					
+				}
+
+public function guardar()
+	{
+
+		$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
+		$consulta = "INSERT into posicionfut values('', '$this->Equipo', '$this->Jugados', '$this->Ganados', '$this->Empatados', '$this->Perdidos', '$this->Favor', '$this->gcontra', '$this->Diferencia', '$this->Puntos') ";
+			if ($cone->query($consulta)){
 				header("Location: catalogofutbol.php");
 											}
 			else{
 				header("Location: login.php");
 				}
-}elseif (isset($_GET["borrar"])){
-	$id=$_GET["borrar"];
-	$consulta = "DELETE from posicionfut where posicion_id=$id ";
-			if ($mysqli->query($consulta)){
+
+			}
+
+public function eliminar()
+	{
+
+		$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
+	$consulta = "DELETE from posicionfut where posicion_id=$this->id ";
+			if ($cone->query($consulta)){
 				header("Location: catalogofutbol.php");
 											}
 			else{
 				header("Location: login.php");
 				}
-}else{  header("Location: catalogofutbol.php"); }
 
 
+}
 
-
-
+}
 ?>

@@ -9,16 +9,15 @@
     <html lang="en-US">
   <body>
 <?php
-include('conectar.php');
-
+include_once('conectar.php');
+$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
 if (isset($_GET['id_us'])){
   $id=$_GET['id_us'];
 
 $consul = "SELECT * FROM posicionfut";
-$result = $mysqli->query($consul);
-$consulta = "SELECT * FROM posicionfut where posicion_id=$id";
-$resultado = $mysqli->query($consulta);
-$fila = $resultado->fetch_row();
+$result = $cone->query($consul);
+$fila = $result->fetch_row();
 $s="";
 $id=$fila[0];
 $Equipo=$fila[1];
@@ -48,31 +47,49 @@ $Puntos="";
 }
 
 
-?>
+if (isset($_POST['submit'])) {
+
+    $consulta = "INSERT into posicionfut values('', '$Equipo', '$Jugados', '$Ganados', '$Empatados', '$Perdidos', '$gfavor', '$gcontra', '$Diferencia', '$Puntos') ";
+      if ($cone->query($consulta)){
+        header("Location: catalogofutbol.php");
+                      }
+      
+      
+    }
+
+include_once('actualiza.php');
+if(isset($_POST["id"])){
+$actualizado=new  actualizaposicion($_POST["Equipo"],$_POST["Jugados"],$_POST["Ganados"], $_POST["Empatados"], $_POST["Perdidos"], $_POST["Favor"], $_POST["contra"], $_POST["Diferencia"], $_POST["Puntos"]);
+$actualizado->actualiza();
+}
+
+elseif (isset($_POST["ids"])){
+$actualizado=new  actualizaposicion($_POST["Equipo"],$_POST["Jugados"],$_POST["Ganados"], $_POST["Empatados"], $_POST["Perdidos"], $_POST["Favor"], $_POST["contra"], $_POST["Diferencia"], $_POST["Puntos"]);
+$actualizado->guardar();
+}
+
+elseif(isset($_GET["borrar"])){
+$actualizado=new  actualizaposicion($_GET["borrar"],0,0,0,0);
+$actualizado->eliminar();
+}
+
+
+
+?>  
     <div class="contenedor">
 
       <div id="posicion">
 
         <h2><span class="fontawesome-lock"></span>Actualizar</h2>
          
-        <form action="actualiza.php" method="POST">
+        <form action="#" method="POST">
 
           <fieldset>
             <p><label for="text">Equipo</label></p>
             
-            <select name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>">
-             <?php    
-             while ( $row = mysqli_fetch_assoc($result))
-              {
-              ?>
-    
-              <option value=" <?php echo $row['equipo'] ?> " ><?php echo $row['equipo']; ?>
-               </option>
-        
-        <?php
-    }    
-    ?>     
-            </select>
+            <p><select name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>">
+             
+
             <p><input type="text" id="text" name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>"></p>
 
             <p><label for="text">Jugados</label></p>

@@ -47,10 +47,12 @@
       </thead>
     
         <?php
-include('conectar.php');
+include_once('conectar.php');
+$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
 
 $consulta = "SELECT * FROM posicionfut";
-$resultado = $mysqli->query($consulta);
+$resultado = $cone->query($consulta);
     while ($fila = $resultado->fetch_row()) {
 echo "<tr>";
 echo "<td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td>".$fila[3]."</td><td>".$fila[4]."</td><td>".$fila[5]."</td><td>".$fila[6]."</td><td>".$fila[7]."</td><td>".$fila[8]."</td><td>".$fila[9]."</td>
@@ -63,7 +65,7 @@ echo "</table>";
 
       ?>
 
-        <form action="" method="POST">
+        <form action="#" method="POST">
           <fieldset>
           
           <p><a href="futposi.php"><input type="button" id="guardar1" name="guardar" value="nuevo"></p></a>

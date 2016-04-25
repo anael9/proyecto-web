@@ -1,5 +1,5 @@
 <?php
-include('conectar.php');
+include_once('conectar.php');
 class login
 {
 	public $nombre;
@@ -17,11 +17,11 @@ class login
 
 	public function consulta(){
 
-		$conexionSacadatos = new Conexion();
- $mysqli = $conexionSacadatos->conectar();
+		$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
 
-$consulta = "SELECT * FROM login where usuario='$this->nombre' and contrasena='$this->contra'";
-$resultado = $mysqli->query($consulta);
+$consulta = "SELECT * FROM login where usuario='$this->nombre' and Contrasena='$this->contra'";
+$resultado = $cone->query($consulta);
 $fila = $resultado->fetch_row();
 
 	

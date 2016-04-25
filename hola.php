@@ -1,8 +1,14 @@
 <?php
 include('conectar.php');
+$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
+
 $consulta = "SELECT * FROM posicionfut";
 $resultado = $mysqli->query($consulta);
 ?>
+
+
+
 <select name="variable">
  <?php
 

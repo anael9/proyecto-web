@@ -1,16 +1,16 @@
 <?php
-
 class conexion
 {
-	public function conectar()
+	public function conectarte()
 	{
 		global $mysqli;
 $mysqli = new mysqli("localhost", "root", "", "acd");
 
-if (mysqli_connect_errno()) {
-    printf("Falló la conexión: %s\n", mysqli_connect_error());
-    exit();
+if ($mysqli->connect_errno) {
+	die('Connect Error: ' . $mysqli->connect_errno);
+    
 }
+return $mysqli;
 }
 }
 
