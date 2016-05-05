@@ -1,0 +1,58 @@
+
+header{
+margin: 0px auto;
+width: 1200px;
+height: 150px;
+background-color: #5353FB;
+border-radius: 0 0 20px 20px;
+
+}
+
+
+div.menu{
+	width: 200px;
+	height: 150px;
+	float: left;
+border-radius: 0 0 20px 20px;
+
+}
+div#uno{
+	background-color: #5353FB;
+}
+div#dos{
+	background-color: #5353FB;
+}
+div#tres{
+	background-color: #5353FB;
+}
+div#cuatro{
+	background-color: #5353FB;
+}
+div#cinco{
+	background-color: #5353FB;
+}
+div#seis{
+	background-color: #5353FB;
+}
+img.icon{
+	display: block;
+	margin: 50px auto;
+    position: relative;
+	padding: 20px;
+    top: -50px;
+}
+img.icon:hover {
+   width: 100px;
+   height: 100px;
+   opacity: .5;
+   -moz-opacity: .5;
+   filter:alpha(opacity=5);
+   	}
+
+p.texto{
+	font-size: 1.2em;
+	color: white;
+	text-align:center;
+	top: -100px;
+	position: relative;
+}

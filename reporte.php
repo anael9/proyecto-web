@@ -21,6 +21,7 @@ $consulta = "SELECT * from goles where equipo='$this->Equipo' and  jugador='$thi
 }else{
  $consulta = "SELECT * FROM goles";
 }
+
 $resultado = $cone->query($consulta);
 $i=0;
     while ($fila = $resultado->fetch_row()) {
@@ -31,7 +32,7 @@ echo "<td>".$fila[0]."</td><td>".$fila[1]."</td><td>".$fila[2]."</td><td>".$fila
 </center></td>";
 echo "</tr>";  
 }
-       
+     
  $i++;
 }
 echo "</table>";
