@@ -4,7 +4,7 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>jugadores</title>
+    <title>Jornada</title>
     
     
         <link rel="stylesheet" href="menu.css">
@@ -26,17 +26,17 @@
 
 <?php
 if (isset($_POST['id'])){
-$Equipo=$_POST["Equipo"];
-$Jugador=$_POST["Jugador"];
+$Nombre=$_POST["Nombre"];
+
 
 }else{
-$Equipo="";
-$Jugador="";
+$Nombre="";
+
 
 }
 ?>
 <header>
-          <<div class="menu" id="uno">
+         <div class="menu" id="uno">
        <a href="juego.php"><img class="icon" src="imagenes\principal.png">
        <p class="texto">Iniio</p></a>
      </div>
@@ -79,8 +79,8 @@ $Jugador="";
         <form action="#" method="POST">
 
           <fieldset>
-            <p><input type="text" id="Equipo" name="Equipo" placeholder="Equipo" value="<?php echo $Equipo?>"></p>
-            <p><input type="text" id="Jugador" name="Jugador" placeholder="Jugador" value="<?php echo $Jugador?>"></p>
+            <p><input type="text" id="Nombre" name="Nombre" placeholder="Nombre" value="<?php echo $Nombre?>"></p>
+
 
             <p><input type="hidden" name="id<?php echo $s;?>" value="<?php echo  $id;?>"></p>
             
@@ -112,19 +112,18 @@ $Jugador="";
  <!--tabla-->
       <div id="login" class="posicion">
 
-        <h2><span class="fontawesome-lock"></span>Goles</h2>
+        <h2><span class="fontawesome-lock"></span>Jornada</h2>
       <table class="heavyTable" id="mitabla">
       <thead>
         <tr>
           <th>ID</th>
-          <th>Equipo</th>
-          <th>Capitan</th>
+          <th>Nombre</th>
           <th>Opciones</th>
         </tr>
 
       <?php
-include_once('jugadoresreportes.php');
-$tablas = new Tablas($Equipo,$Jugador);
+include_once('jornadareportes.php');
+$tablas = new Tablas($Nombre);
 $tabla = $tablas->usuarios();
 
 ?>  
@@ -132,7 +131,7 @@ $tabla = $tablas->usuarios();
   
         <form action="#" method="POST">
           <fieldset>
-          <p><a href="jugadorescatalogo.php"><input type="button" id="guardar1" name="guardar" value="nuevo"></p></a>
+          <p><a href="jornadacatalogo.php"><input type="button" id="guardar1" name="guardar" value="nuevo"></p></a>
           </fieldset>
         </form>
 

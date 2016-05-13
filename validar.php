@@ -1,3 +1,5 @@
+ * @author anael hernadez rivera
+ * @version 1.0 
 <?php
 include_once('conectar.php');
 class login
@@ -32,7 +34,7 @@ if ($fila[2]){
 	$nombre=$fila[2];
 	session_start();
 	$_SESSION["usuario"]=$nombre;
-	header("Location: catalogofutbol.php?valido=$valido");
+	header("Location: juego.php?valido=$valido");
 }
 	else{
 $valido=0;

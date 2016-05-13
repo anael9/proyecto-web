@@ -1,6 +1,6 @@
-
  * @author anael hernadez rivera
- * @version 1.0 <!DOCTYPE html>
+ * @version 1.0 
+<!DOCTYPE html>
 <html >
   <head>
         <link rel="stylesheet" href="golescata.css"> 
@@ -16,13 +16,13 @@ $conexiondatos = new conexion();
 if (isset($_GET['id_us'])){
   $id=$_GET['id_us'];
 
-$consulta = "SELECT * FROM equiposfut where id=$id";
+$consulta = "SELECT * FROM jugadores where id=$id";
 $result = $cone->query($consulta);
 $fila = $result->fetch_row();
 $s="";
 $id=$fila[0];
-$Equipo=$fila[1];
-$Jugador=$fila[2];
+$Jugador=$fila[1];
+$Equipo=$fila[2];
 
 }else{
 $s="s";
@@ -34,15 +34,15 @@ $Jugador="";
 }
 
 
-include_once('actualizaequipo.php');
+include_once('jugadoresactualiza.php');
 //echo $_POST["id"];
-if(isset($_POST["id"])){
-$actualizado=new  actualiequipo($_POST["id"], $_POST["Equipo"], $_POST["Jugador"]);
+if (isset($_POST['id'])){
+$actualizado=new  actualiequipo($_POST["id"], $_POST["Jugador"], $_POST["Equipo"]);
 $actualizado->actualiza();
 }
 
 elseif (isset($_POST["ids"])){
-$actualizado=new  actualiequipo($_POST["ids"], $_POST["Equipo"], $_POST["Jugador"]);
+$actualizado=new  actualiequipo($_POST["ids"], $_POST["Jugador"], $_POST["Equipo"]);
 $actualizado->guardar();
 }
   elseif(isset($_GET["borrar"])){
@@ -60,7 +60,7 @@ $actualizado->eliminar();
 
         <h2><span class="fontawesome-lock"></span>Actualizar</h2>
          
-        <form action="equipocatalogo.php" method="POST">
+        <form action="jugadorescatalogo.php" method="POST">
 
           <div class="fieldset">
             <p><label for="text">Equipo</label></p>                  

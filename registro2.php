@@ -1,3 +1,5 @@
+ * @author anael hernadez rivera
+ * @version 1.0 
 <!DOCTYPE html>
 <html >
   <head>
@@ -37,7 +39,7 @@
             <p><label for="text">Usuario</label></p>
             <p><input type="text" id="text" name="usuario" placeholder="Usuario"></p>
 
-            <p><label for="password">Repetir Contraseña</label></p>
+            <p><label for="password">E-Mail</label></p>
             <p><input type="email" id="mail" name="mail" placeholder="E-Mail"></p>
 
             <p><label for="password">Contraseña</label></p>
@@ -58,6 +60,7 @@
      <?php
          if(isset($_POST['submit'])){
       require("registro.php");
+      
     }
       
 

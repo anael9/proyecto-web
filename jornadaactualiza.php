@@ -1,4 +1,3 @@
-
  * @author anael hernadez rivera
  * @version 1.0 
 <?php
@@ -7,16 +6,16 @@ include_once('conectar.php');
 class actualiequipo
 {
 public $id;
-public $Equipo;
-public $Jugador;
+public $Nombre;
 
 
 
-function __construct($id, $Equipo, $Jugador)
+
+function __construct($id, $Nombre)
 	{
 	$this->id=$id;	
-	$this->Equipo=$Equipo;
-	$this->Jugador=$Jugador;
+	$this->Nombre=$Nombre;
+
 	
 	}
 public function actualiza()
@@ -26,9 +25,9 @@ public function actualiza()
  $cone = $conexiondatos->conectarte();
 
 
-		echo $consulta = "UPDATE equiposfut SET Equipo='$this->Equipo', capitan='$this->Jugador' where id=$this->id";
+		echo $consulta = "UPDATE jornada SET Nombre='$this->Nombre' where id=$this->id";
 			if ($cone->query($consulta)){
-				header("Location: equipo.php");
+				header("Location: jornada.php");
 											}
 			else{
 				header("Location: login.php");
@@ -38,18 +37,16 @@ public function actualiza()
 
 public function guardar()
 	{
-
 		$conexiondatos = new conexion();
  $cone = $conexiondatos->conectarte();
  
-	echo $consulta = "INSERT into equiposfut values('', '$this->Equipo', '$this->Jugador') ";
+	echo $consulta = "INSERT into jornada values('', '$this->Nombre') ";
 			if ($cone->query($consulta)){
-				header("Location: equipo.php");
+				header("Location: jornada.php");
 											}
 			else{
 				header("Location: login.php");
 				}
-
 			}
 
 public function eliminar()
@@ -57,9 +54,9 @@ public function eliminar()
 
 		$conexiondatos = new conexion();
  $cone = $conexiondatos->conectarte();
-	$consulta = "DELETE from equiposfut where id=$this->id";
+	echo $consulta = "DELETE from jornada where id=$this->id";
 			if ($cone->query($consulta)){
-				header("Location: equipo.php");
+				header("Location: jornada.php");
 											}
 			else{
 				header("Location: login.php");
@@ -68,4 +65,4 @@ public function eliminar()
 }
 }
 
-?>
+?>	

@@ -1,3 +1,5 @@
+ * @author anael hernadez rivera
+ * @version 1.0 
 <?php
 // CREANDO MI CONEXION
 include_once('config.php');

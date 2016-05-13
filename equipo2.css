@@ -28,11 +28,49 @@ input {
 }
 
 /* ---------- LOGIN ---------- */
-#Buscar {
-   width: 1200px;
+#hola {
+   width: 595px;
+  position: absolute;
+  top: 10px;
+  left: 5%;
+
+}
+#hola h2 {
+  background: #5353FB;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  margin-bottom: 0px;
+}
+
+#hola h2 span {
+  margin-right: 14px;
+}
+
+#hola fieldset {
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 26px;
+  margin-bottom: 10px;
+}
+
+#hola fieldset p {
+  color: #777;
+  margin-bottom: 14px;
+  top: -30px;
   position: relative;
-  top: 70px;
-  left: 5px;
+}
+
+#hola fieldset p:last-child {
+  margin-bottom: 0;
+}
+
+#Buscar {
+   width: 595px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
 
 }
 
@@ -65,39 +103,39 @@ input {
   margin-bottom: 0;
 }
 
-#Equipo{
+#Nombre{
   border-radius: 3px;
   background: #eee;
   color: #777;
   padding: 4px 10px;
   width: 150px;
-  top: 20%;
-  left: 20%;
+  top: 60%;
+  left: 10%;
   position: absolute;
 }
-#Jugador{
+#Jornada{
   border-radius: 3px;
   background: #eee;
   color: #777;
   padding: 4px 10px;
   width: 150px;
-  top: 20%;
+  top: 60%;
   left: 40%;
   position: absolute;
 }
 
-#Buscar fieldset input[type="submit"] {
+#Buscar fieldset button{
   background: #33cc77;
   color: #fff;
   display: block;
   margin: 0 auto;
   padding: 4px 0;
   width: 100px;
-  left: 50%;
+  left: 70%;
   position: absolute;
-top: 20%;
+top: 60%;
 }
 
-#Buscar fieldset input[type="submit"]:hover {
+#Buscar fieldset button:hover {
   background: #28ad63;
 }

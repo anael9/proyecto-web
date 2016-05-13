@@ -1,5 +1,9 @@
-<?php
+
+ * @author anael hernadez rivera
+ * @version 1.0 <?php
 include('conectar.php');
+$conexiondatos = new conexion();
+ $cone = $conexiondatos->conectarte();
 	$usuario=$_POST['usuario'];
 	$mail=$_POST['mail'];
 	$pass= $_POST['contra'];
@@ -11,14 +15,11 @@ if (isset($_POST['submit'])) {
 		if($pass==$rpass){
 
 		$consulta = "INSERT into login values('', '$usuario', '$mail', '$pass') ";
-			if ($mysqli->query($consulta)){
-				header("Location: registro2.php");
+			if ($cone->query($consulta)){
+				header("Location: juego.php");
 											}
 			}
 			
 		}else{
 			echo 'Las contraseñas son incorrectas';
 		}
-
-	
-?>

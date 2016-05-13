@@ -1,3 +1,5 @@
+ * @author anael hernadez rivera
+ * @version 1.0 
 <!DOCTYPE html>
 <html >
   <head>
@@ -35,34 +37,33 @@ $Jugador="";
 ?>
 <header>
           <div class="menu" id="uno">
-       <img class="icon" src="">
-       <img class="icon" src="imagenes\principal.png">
-       <p class="texto">Unav</p>
+       <a href="juego.php"><img class="icon" src="imagenes\principal.png">
+       <p class="texto">Iniio</p></a>
      </div>
      
      <div class="menu" id="dos">
-       <img class="icon" src="imagenes\principal.png">
-       <p class="texto">Inicio</p>
+       <a href="equipo.php"><img class="icon" src="imagenes\equipo.png">
+       <p class="texto">Equipo</p></a>
      </div>
    
      <div class="menu" id="tres">
-       <img class="icon" src="imagenes\goles.png">
-       <p class="texto">Goles</p>
+       <a href="jugadores.php"><img class="icon" src="imagenes\jugador.png">
+       <p class="texto">Jugador</p></a>
      </div>
 
      <div class="menu" id="cuatro">
-       <img class="icon" src="imagenes\equipo.png">
-       <p class="texto">Equipo</p>
+       <a href="goles.php"><img class="icon" src="imagenes\goles.png">
+       <p class="texto">Goles</p></a>
      </div>
 
      <div class="menu" id="cinco">
-       <img class="icon" src="imagenes\jugador.png">
-       <p class="texto">Jugador</p>
+       <a href="jornada.php"><img class="icon" src="imagenes\jugador.png">
+       <p class="texto">Jornada</p></a>
      </div>
 
      <div class="menu" id="seis">
-       <img class="icon" src="imagenes\usuario.png">
-       <p class="texto">Añadir usuario</p>
+       <a href="registro2.php"><img class="icon" src="imagenes\usuario.png">
+       <p class="texto">Jornada</p></a>
      </div>
   </header>
 
@@ -92,7 +93,22 @@ $Jugador="";
 
         </form>
 
-      </div> <!-- end login -->
+      </div> 
+
+         <div id="hola">
+
+        <h2><span class="fontawesome-lock"></span>Instrucción</h2>
+         
+        <form action="#" method="POST">
+
+          <fieldset>
+            <p><label style="color: #5353FB;">Este formulario será el encargado de ingresar, actualizar y modificar los datos de los equipos del torneo.</label></p>
+          </fieldset>
+
+        </form>
+
+      </div> 
+
  <!--tabla-->
       <div id="login" class="posicion">
 
